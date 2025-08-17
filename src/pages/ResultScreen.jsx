@@ -1,5 +1,5 @@
 import CenteredLayout from "../components/ui/CenteredLayout";
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 import FailureCard from "./FailureCard";
 import SuccessCard from "./SucessCard";
 import Logo from "../assets/images/logo.webp";

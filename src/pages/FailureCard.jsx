@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
 import { useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners"; // Importing the loader
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 import { useUser } from "../components/ui/userContext";
-
 
 const FailureCard = () => {
   const [isLoading, setIsLoading] = useState(false); // Loading state for retry button

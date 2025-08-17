@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import { useNavigate } from "react-router-dom";
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 import { useUser } from "../components/ui/userContext";
 import { RingLoader } from "react-spinners";
 import { useCrossTabSync } from "../components/ui/useCrossTabSync";
