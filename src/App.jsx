@@ -5,7 +5,7 @@ import WelcomPage from "./pages/WelcomPage";
 import WalletBadgeWrapper from "./components/wallet/WalletBadgeWrapper";
 import { UserProvider } from "./components/ui/userContext";
 import Logo from "./assets/images/logo.webp";
-import { QuestionsProvider } from "./components/ui/questionsContext";
+import { QuestionsProvider } from "./components/ui/QuestionsContext";
 import QuizContainer from "./pages/QuizContainer";
 import Timer from "./pages/Timer";
 import ResultScreen from "./pages/ResultScreen";
