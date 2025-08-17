@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 import { RingLoader } from "react-spinners"; // Importing the loader
 
 function Navigation() {

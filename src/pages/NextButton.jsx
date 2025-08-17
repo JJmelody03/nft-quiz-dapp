@@ -1,4 +1,4 @@
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 
 function NextButton() {
   const { state, dispatch } = useQuestions();
