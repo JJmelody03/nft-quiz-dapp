@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useUser } from "../components/ui/userContext";
 import CenteredLayout from "../components/ui/CenteredLayout";
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 import { useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
 import Logo from "../assets/images/logo.webp";
