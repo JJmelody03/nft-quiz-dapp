@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useQuestions } from "../components/ui/questionsContext";
+import { useQuestions } from "../components/ui/QuestionsContext";
 import { useNavigate } from "react-router-dom";
 import useLocalStorage from "../components/ui/useLocalStorage";
 import { useCrossTabSync } from "../components/ui/useCrossTabSync";
