@@ -1,0 +1,43 @@
+{
+  "questions": [
+    {
+      "question": "What does 'minting' an NFT mean?",
+      "options": [
+        "Creating a new cryptocurrency",
+        "The process of creating a new token or asset on the blockchain",
+        "Buying NFTs from a marketplace",
+        "Transferring ownership of an NFT"
+      ],
+      "correctOption": 1,
+      "points": 1
+    },
+    {
+      "question": "Which platform is the most commonly used for trading NFTs?",
+      "options": ["OpenSea", "Coinbase", "Binance", "Uniswap"],
+      "correctOption": 0,
+      "points": 1
+    },
+    {
+      "question": "What is a 'DAO' (Decentralized Autonomous Organization)?",
+      "options": [
+        "A company governed by smart contracts and token holders",
+        "A digital wallet for NFTs",
+        "A blockchain that only runs on Ethereum",
+        "A platform for trading digital art"
+      ],
+      "correctOption": 0,
+      "points": 1
+    },
+    {
+      "question": "Which Web3 wallet is commonly used to store NFTs?",
+      "options": [
+        "MetaMask",
+        "Coinbase Wallet",
+        "Trust Wallet",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 1
+    }
+  ]
+}
