@@ -1,35 +1,35 @@
 {
   "questions": [
     {
-      "question": "What does 'minting' an NFT mean?",
+      "question": "What is 'minting' an NFT?",
       "options": [
-        "Creating a new cryptocurrency",
-        "The process of creating a new token or asset on the blockchain",
-        "Buying NFTs from a marketplace",
-        "Transferring ownership of an NFT"
+        "Creating a cryptocurrency",
+        "Creating a token on the blockchain",
+        "Buying an NFT",
+        "Transferring an NFT"
       ],
       "correctOption": 1,
       "points": 1
     },
     {
-      "question": "Which platform is the most commonly used for trading NFTs?",
+      "question": "Which platform is popular for trading NFTs?",
       "options": ["OpenSea", "Coinbase", "Binance", "Uniswap"],
       "correctOption": 0,
       "points": 1
     },
     {
-      "question": "What is a 'DAO' (Decentralized Autonomous Organization)?",
+      "question": "What is a 'DAO'?",
       "options": [
-        "A company governed by smart contracts and token holders",
-        "A digital wallet for NFTs",
-        "A blockchain that only runs on Ethereum",
-        "A platform for trading digital art"
+        "Company governed by smart contracts",
+        "Wallet for NFTs",
+        "Ethereum blockchain",
+        "Digital art platform"
       ],
       "correctOption": 0,
       "points": 1
     },
     {
-      "question": "Which Web3 wallet is commonly used to store NFTs?",
+      "question": "Which wallet stores NFTs?",
       "options": [
         "MetaMask",
         "Coinbase Wallet",
@@ -37,6 +37,67 @@
         "All of the above"
       ],
       "correctOption": 3,
+      "points": 1
+    },
+    {
+      "question": "What is 'staking' in blockchain?",
+      "options": [
+        "Storing tokens",
+        "Locking tokens to earn rewards",
+        "Buying tokens",
+        "Transferring tokens"
+      ],
+      "correctOption": 1,
+      "points": 1
+    },
+    {
+      "question": "Which consensus does Ethereum 2.0 use?",
+      "options": [
+        "Proof of Work (PoW)",
+        "Proof of Stake (PoS)",
+        "Delegated PoS",
+        "Proof of Authority"
+      ],
+      "correctOption": 1,
+      "points": 1
+    },
+    {
+      "question": "Which is NOT a blockchain feature?",
+      "options": [
+        "Decentralization",
+        "Transparency",
+        "Immutability",
+        "Instant transactions"
+      ],
+      "correctOption": 3,
+      "points": 1
+    },
+    {
+      "question": "What is an 'ERC20' token?",
+      "options": [
+        "NFT token standard",
+        "Fungible token standard",
+        "Token exchange platform",
+        "Token wallet"
+      ],
+      "correctOption": 1,
+      "points": 1
+    },
+    {
+      "question": "What is 'gas' in Ethereum?",
+      "options": [
+        "Fuel for mining blocks",
+        "Transaction fee for operations",
+        "Amount of Ethereum mined",
+        "Method to transfer tokens"
+      ],
+      "correctOption": 1,
+      "points": 1
+    },
+    {
+      "question": "Which is a decentralized NFT marketplace?",
+      "options": ["OpenSea", "eBay", "Amazon", "Coinbase"],
+      "correctOption": 0,
       "points": 1
     }
   ]

@@ -35,7 +35,7 @@ function QuizAuthentication() {
     });
 
     try {
-      await new Promise((res) => setTimeout(res, 2000));
+      await new Promise((res) => setTimeout(res, 1500));
       const walletResponse = await connectWallet();
       if (!walletResponse) throw new Error("No wallet returned");
       localStorage.setItem("walletAddress", JSON.stringify(walletResponse)); // save it
@@ -82,7 +82,7 @@ function QuizAuthentication() {
     setTimeout(() => {
       localStorage.setItem("isAuthenticated", "true");
       navigate("/welcome", { replace: true });
-    }, 3500); // Adjusting to navigate after a delay if necessary
+    }, 4000); // Adjusting to navigate after a delay if necessary
   }
   useEffect(() => {
     const savedWalletAddress = localStorage.getItem("walletAddress");

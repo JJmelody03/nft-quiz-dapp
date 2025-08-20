@@ -6,7 +6,7 @@ import { useCrossTabSync } from "../components/ui/useCrossTabSync";
 
 const FULL_DASH_ARRAY = 283; // Circle circumference
 
-function CircularTimer({ duration = 60 }) {
+function CircularTimer({ duration = 300 }) {
   const [timeLeft, setTimeLeft] = useLocalStorage("quizTimer", duration);
   const navigate = useNavigate();
   const { state, dispatch } = useQuestions();
