@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function OpenInWalletBrowser() {
-  const dappUrl = "https://jade-alpaca-383221.netlify.app";
+  const dappUrl = "https://chaindustry-certify.netlify.app";
   const metamaskLink = `https://metamask.app.link/dapp/${dappUrl.replace(/^https?:\/\//, "")}`;
 
   return (
