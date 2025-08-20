@@ -8,7 +8,7 @@ export default function WalletStatusMessage() {
   if (!fallbackMode) return null;
 
   const isMobile = fallbackMode === "mobile";
-  const dappUrl = "https://jade-alpaca-383221.netlify.app";
+  const dappUrl = "https://chaindustry-certify.netlify.app";
   const metamaskLink = `https://metamask.app.link/dapp/${dappUrl.replace(
     /^https?:\/\//,
     ""
