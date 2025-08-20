@@ -18,22 +18,32 @@ export function Walletprovider({ children }) {
   const [fallbackMode, setFallbackMode] = useState(null);
   const navigate = useNavigate();
 
-  // ✅ Auto-connect if wallet is already connected
+  // ✅ FIXED: Only check wallet silently on load
   useEffect(() => {
-    if (window.ethereum) {
-      const providerInstance = new BrowserProvider(window.ethereum);
-      setProvider(providerInstance);
-      providerInstance
-        .getSigner()
-        .then(async (sgn) => {
-          const addr = await sgn.getAddress();
-          setSigner(sgn);
-          setAddress(addr);
-        })
-        .catch(() => {});
-    }
+    const trySilentWalletConnect = async () => {
+      if (!window.ethereum) return;
+
+      try {
+        const accounts = await window.ethereum.request({
+          method: "eth_accounts", // ✅ This does NOT trigger the popup
+        });
+
+        if (accounts.length > 0) {
+          const providerInstance = new BrowserProvider(window.ethereum);
+          const signerInstance = await providerInstance.getSigner(); // Safe here
+          setProvider(providerInstance);
+          setSigner(signerInstance);
+          setAddress(accounts[0]);
+        }
+      } catch (err) {
+        console.error("Silent connect failed:", err);
+      }
+    };
+
+    trySilentWalletConnect();
   }, []);
 
+  // ✅ This method is called only on user interaction
   const connectWallet = async () => {
     const isEthereumAvailable = typeof window.ethereum !== "undefined";
 
@@ -46,7 +56,9 @@ export function Walletprovider({ children }) {
     }
 
     try {
+      // ✅ This WILL trigger the popup (only when called)
       await window.ethereum.request({ method: "eth_requestAccounts" });
+
       const providerInstance = new BrowserProvider(window.ethereum);
       const signerInstance = await providerInstance.getSigner();
       const walletAddress = await signerInstance.getAddress();
@@ -89,21 +101,25 @@ export function Walletprovider({ children }) {
               },
             ],
           });
+
           await window.ethereum.request({
             method: "wallet_switchEthereumChain",
             params: [{ chainId: SEPOLIA_CHAIN_ID_HEX }],
           });
+
           return true;
         } catch (addErr) {
           console.error("Failed to add Sepolia", addErr);
           return false;
         }
       }
+
       console.error("Failed to switch network", switchErr);
       return false;
     }
   };
 
+  // ✅ Handles when user disconnects or switches accounts
   useEffect(() => {
     if (!window.ethereum) return;
 
@@ -124,6 +140,7 @@ export function Walletprovider({ children }) {
     };
 
     window.ethereum.on("accountsChanged", handleAccountsChanged);
+
     return () => {
       window.ethereum.removeListener("accountsChanged", handleAccountsChanged);
     };
