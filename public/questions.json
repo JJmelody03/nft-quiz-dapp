@@ -29,25 +29,15 @@
       "points": 1
     },
     {
-      "question": "Which wallet stores NFTs?",
-      "options": [
-        "MetaMask",
-        "Coinbase Wallet",
-        "Trust Wallet",
-        "All of the above"
-      ],
-      "correctOption": 3,
+      "question": "Which network hosts most NFTs?",
+      "options": ["Ethereum", "Solana", "Polygon", "Avalanche"],
+      "correctOption": 0,
       "points": 1
     },
     {
-      "question": "What is 'staking' in blockchain?",
-      "options": [
-        "Storing tokens",
-        "Locking tokens to earn rewards",
-        "Buying tokens",
-        "Transferring tokens"
-      ],
-      "correctOption": 1,
+      "question": "Which token is used for gas on Ethereum?",
+      "options": ["ETH", "USDT", "BNB", "SOL"],
+      "correctOption": 0,
       "points": 1
     },
     {
