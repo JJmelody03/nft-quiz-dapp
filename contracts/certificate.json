@@ -1,7 +1,7 @@
 {
   "name": "Chaindustry Proof of Knowledge",
   "description": "An official blockchain-verified certificate issued by Chaindustry, to recognize outstanding achievement and/or completion of training.",
-  "image": "https://ipfs.io/ipfs/QmZdxWTrWqbyRfbfWCz93uHznG9oTpZhu5Y2Hs7ZQPVQEk",
+  "image": "https://gateway.pinata.cloud/ipfs/bafybeihqgh7olvdk3tkbt5zbluuv5o7illa537t2bnr4je3em3f4hmjunm",
   "attributes": [
     { "trait_type": "Issuer", "value": "Chaindustry Web3 Academy" },
     { "trait_type": "Type", "value": "Certificate" },

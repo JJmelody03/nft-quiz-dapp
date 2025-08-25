@@ -9,7 +9,8 @@ contract CertificationNftTest is Test {
     DeployCertificationNft public deployer;
     CertificationNft public certificationNft;
     address public USER = makeAddr("user");
-    string public constant CDN = "https://bafybeihiunsnswm4hhroy5frsuegg4tduqnkviwigi6ymizbqti5dyizwm.ipfs.dweb.link?filename=certificate.json";
+    string public constant CDN = "https://gateway.pinata.cloud/ipfs/bafkreifpgh4uueny6xetol3y7sbhcdffvxgldhxfiyefv42abzxh774crm";
+
 
     function setUp() public {
         deployer = new DeployCertificationNft();
