@@ -7,7 +7,7 @@ import {CertificationNft} from "../src/CertificationNft.sol";
 
 contract MintCertificationNft is Script {
     string public constant CDN =
-        "https://bafybeifh36hd37ie5yti6xh5gzgzdamhtbozg5rxhym6ondp4qzswactpe.ipfs.dweb.link?filename=certificate.png.png";
+        "ipfs://bafkreid7ak5xvbrlg7hsmhxlhn4dlexahzqktg7objj7jm74iax6knwara";
 
     function run() external {
         address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment(

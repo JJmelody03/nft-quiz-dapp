@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import { useWallet } from "./WalletConnect";
 
-const CONTRACT_ADDRESS = "0x5b0Dd0afAacF25fEC764511892AE5fDC76bD6665";
+const CONTRACT_ADDRESS = "0xb7e6fEE72071bf48304f7D81A127EF078734E796";
 
 export function useNftContract() {
   const { signer } = useWallet();
